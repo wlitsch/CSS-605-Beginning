@@ -40,7 +40,7 @@ public class MassiveRetaliatoryStrike implements Player{
     public void setScore(int myMove, int oppMove, int myScore, int oppScore){
         this.score = score + myScore;
         this.oppMove = oppMove;   
-        System.out.println("myScore: " + myScore + " oppScore: " + oppScore);
+        System.out.println("MassiveRetaliatoryStrike's Score: " + myScore + " oppScore: " + oppScore);
     }
    
     public void reset(){

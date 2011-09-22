@@ -33,6 +33,8 @@ public class Tournament {
             for (int j = i+1; j < players.size(); j++){
                 for (int k = 0; k < rounds; k++){
                     playRound(players.get(i),players.get(j));
+                    players.get(i).reset();
+                    players.get(j).reset();
                 }
             }
         }

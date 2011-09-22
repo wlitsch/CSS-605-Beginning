@@ -21,6 +21,14 @@ public class pdgame {
         game.addPlayer(new MassiveRetaliatoryStrike());
         game.addPlayer(new OptimisticTitForTat());
         game.addPlayer(new PessimisticTitForTat());
+        game.addPlayer(new RandomAction());
+        
+        game.addPlayer(new AlwaysDefect());
+        game.addPlayer(new AlwaysCooperate());
+        game.addPlayer(new MassiveRetaliatoryStrike());
+        game.addPlayer(new OptimisticTitForTat());
+        game.addPlayer(new PessimisticTitForTat());
+        game.addPlayer(new RandomAction());
         game.playTournament();
         game.reportFinalScore();
     }

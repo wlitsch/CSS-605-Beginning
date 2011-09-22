@@ -22,7 +22,7 @@ public class AlwaysCooperate implements Player{
     
     public void setScore(int myMove, int oppMove, int myScore, int oppScore){
         this.score = score + myScore;
-        System.out.println("myScore: " + myScore + " oppScore: " + oppScore);
+        System.out.println("AlwaysCooperate's Score: " + myScore + " oppScore: " + oppScore);
     }
    
     public void reset(){
