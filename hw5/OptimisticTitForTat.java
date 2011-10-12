@@ -1,0 +1,46 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pdgame;
+
+/**
+ *
+ * @author William
+ */
+public class OptimisticTitForTat implements Player {
+    
+    private static final int COOPERATE = 0;
+    private static final int DEFECT = 1;
+    private int score;
+    private int oppMove;
+    
+    public OptimisticTitForTat(){
+        score = 0;
+        oppMove = COOPERATE;
+    }
+    
+    public String toString() {
+        return("OptimisticTitForTat" );
+    }
+    
+    public int makeMove() {  
+        
+        return oppMove;
+    }
+    
+    public void setScore(int myMove, int oppMove, int myScore, int oppScore){
+        this.score = score + myScore;
+        this.oppMove = oppMove;      
+        //System.out.println(toString() + "'s Score: " + myScore + " oppScore: " + oppScore);
+    }
+    
+     public int getScore() {
+        return(score);
+    }
+   
+    public void reset(){
+        oppMove = COOPERATE;
+        score = 0;
+    }
+}
